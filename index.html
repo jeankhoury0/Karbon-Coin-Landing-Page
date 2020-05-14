@@ -999,7 +999,7 @@
         <div class="row">
           <!-- Start Col -->
           <div class="col-lg-6 col-md-12">
-          <form id="contactForm">
+          <form id="contactForm" name="Get In Touch" method="POST" data-netlify="true" >
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -1021,7 +1021,7 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" placeholder="Budget" id="budget" class="form-control" name="budget" required data-error="Please enter your Budget">
+                  <input type="text" placeholder="Country" id="Country" class="form-control" name="Country" required data-error="Please enter your Country">
                   <div class="help-block with-errors"></div>
                 </div> 
               </div>
@@ -1030,6 +1030,7 @@
                   <textarea class="form-control" id="message"  name="message" placeholder="Write Message" rows="4" data-error="Write your message" required></textarea>
                   <div class="help-block with-errors"></div>
                 </div>
+                <div data-netlify-recaptcha="true"></div>
                 <div class="submit-button">
                   <button class="btn btn-common" id="submit" type="submit">Submit</button>
                   <div id="msgSubmit" class="h3 hidden"></div> 
